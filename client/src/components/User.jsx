@@ -12,7 +12,7 @@ const User = ({ user, index, handleClaim }) => {
 
   return (
     <div className="w-full px-2 sm:px-4 md:px-6">
-      <div className="flex flex-wrap items-center justify-between bg-white hover:bg-zinc-100 rounded-lg shadow-md py-3 px-4 transition-all duration-200 overflow-hidden">
+      <div className="flex flex-wrap items-center justify-between bg-white hover:bg-zinc-100 rounded-lg shadow-md py-3 px-4 transition-all duration-200">
 
         {/* Left: Rank, Avatar, Name */}
         <div className="flex items-center gap-3 flex-shrink min-w-[150px] max-w-full overflow-hidden">
