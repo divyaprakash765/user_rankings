@@ -81,7 +81,7 @@ const Home = () => {
             <Ranker key={index} user={userItem} index={index} handleClaim={() => handleClaim(userItem._id)} />
           ))}
         </div>
-        <div className="max-h-screen overflow-y-auto pb-20">
+        <div className="h-[60vh] overflow-y-auto relative bottom-[60vh] lg:bottom-[50vh] z-10">
           {user.slice(3, user.size).map((userItem, index) => (
             <User key={index} user={userItem} index={index} handleClaim={() => handleClaim(userItem._id)} />
           ))}
