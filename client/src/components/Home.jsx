@@ -14,7 +14,7 @@ const Home = () => {
 
    const handleClaim = async (userId) => {
       try {
-        const res = await axios.post(`http://localhost:3000/api/v1/user/claim/${userId}`);
+        const res = await axios.post(`https://user-rankings.onrender.com/api/v1/user/claim/${userId}`);
         toast.success(`${res.data.point} ${res.data?.message || "Claimed successfully!"}`);
       } catch (err) {
         toast.error(err.response?.data?.message || "Claim failed!");
@@ -24,7 +24,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await axios.get("http://localhost:3000/api/v1/user/");
+      const res = await axios.get("https://user-rankings.onrender.com/api/v1/user/");
       setUser(res.data.data);
     };
     fetchData();
@@ -39,7 +39,7 @@ const Home = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/v1/user/",
+        "https://user-rankings.onrender.com/api/v1/user/",
         formData,
         {
           headers: {

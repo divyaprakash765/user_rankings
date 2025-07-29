@@ -10,7 +10,7 @@ const History = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(`http://localhost:3000/api/v1/user/${userId}`);
+        const res = await axios.get(`https://user-rankings.onrender.com/api/v1/user/${userId}`);
         setHistoryData(res.data.user.point_history); // Ensure this is an array
       } catch (error) {
         console.error('Failed to fetch user data:', error);
