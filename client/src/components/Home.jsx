@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Ranker from "./ranker";
+import Ranker from "./Ranker";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import User from "./User";
